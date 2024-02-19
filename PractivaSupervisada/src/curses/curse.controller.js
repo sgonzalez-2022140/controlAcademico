@@ -2,13 +2,11 @@
 
 import User from '../user/user.model.js'
 import Curse from './curse.model.js'
+import { checkUpdate } from '../utils/validator.js'
 
 export const addCurse = async (req, res) => {
     try {
-        let data = req.body
-        //Validar que si hay un maestro
-        let user = await User.findOne({ _id: data.role = 'TEACHER'})
-        if(!user) return res.status(404).send({message: 'we need a teacher to create a curse'})
+        let data = req.body                        
         //crear instnacia de curse
         let curse = new Curse(data)
         //guardar en la bd
@@ -19,5 +17,15 @@ export const addCurse = async (req, res) => {
     } catch (err) {
         console.error(err)
         return res.status(500).send({message: 'Error adding a curse'})
+    }
+}
+
+export const search = async (req, res) => {
+    try {
+        let curses = await Curse.find()
+        return res.send({ curses })
+    } catch (err) {
+        console.error(err)
+        return res.status(500).send({ message: 'Error getting animals' })
     }
 }

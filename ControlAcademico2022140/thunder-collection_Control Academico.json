@@ -1,0 +1,321 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Control Academico",
+    "dateExported": "2024-03-04T05:54:45.426Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c8263b42-d653-4b8e-a165-c9af05c21098",
+            "name": "POST",
+            "containerId": "",
+            "created": "2024-03-04T02:48:09.808Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4eef0128-3724-49b6-88be-36892b5cbf61",
+            "name": "Update ",
+            "containerId": "",
+            "created": "2024-03-04T03:21:11.475Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "8e0f7e67-230e-49c9-a9ef-5a287b1737ee",
+            "name": "Delete",
+            "containerId": "",
+            "created": "2024-03-04T04:53:34.088Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "70cbb517-11e7-4ffd-a380-c9ab394f6677",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "c8263b42-d653-4b8e-a165-c9af05c21098",
+            "name": "New Student",
+            "url": "/registUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T02:48:15.236Z",
+            "modified": "2024-03-04T05:44:23.321Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "alex"
+                    },
+                    {
+                        "name": "lastName",
+                        "value": "gonzalez"
+                    },
+                    {
+                        "name": "username",
+                        "value": "alex"
+                    },
+                    {
+                        "name": "password",
+                        "value": "guatemala"
+                    },
+                    {
+                        "name": "role",
+                        "value": "STUDENT"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d21249d-30eb-4c22-ab10-97541b64dcaa",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "c8263b42-d653-4b8e-a165-c9af05c21098",
+            "name": "New Curse",
+            "url": "/addCourse",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T03:14:23.639Z",
+            "modified": "2024-03-04T05:08:37.343Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTcxYWY5NTY2YzkxM2M2YzA2MTciLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjg4NjIsImV4cCI6MTcwOTUzOTY2Mn0.MlJxSFcflvTByAJ-FAxFDCYPpmRHtSE4s7t0bbvuHU8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Matemática"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Materia donde se miran números"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e5571af9566c913c6c0617"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7377f10a-63d9-4059-b405-e3465988c7f2",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "c8263b42-d653-4b8e-a165-c9af05c21098",
+            "name": "Log an user",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T03:20:24.790Z",
+            "modified": "2024-03-04T04:46:38.233Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "account",
+                        "value": "jorge"
+                    },
+                    {
+                        "name": "password",
+                        "value": "guatemala"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0bd101c6-52f7-483b-9e49-6036353d463a",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "4eef0128-3724-49b6-88be-36892b5cbf61",
+            "name": "Update a USER",
+            "url": "/updateUser/65e551ac8c5ce43bdc4d46de",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-04T03:21:26.555Z",
+            "modified": "2024-03-04T04:52:48.187Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTFhYzhjNWNlNDNiZGM0ZDQ2ZGUiLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjc5NDMsImV4cCI6MTcwOTUzODc0M30.AB8Ic42ymLQMYG2xj561XDYl03tagD6R51bUgnU1YXg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "jorge1"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Jorge6to"
+                    },
+                    {
+                        "name": "password",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "role",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8bdf77da-0911-4d36-bf89-9b70640324aa",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "8e0f7e67-230e-49c9-a9ef-5a287b1737ee",
+            "name": "Delete a User",
+            "url": "/deleteU/65e551ac8c5ce43bdc4d46de",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-04T04:53:42.051Z",
+            "modified": "2024-03-04T04:55:18.122Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTFhYzhjNWNlNDNiZGM0ZDQ2ZGUiLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjc5NDMsImV4cCI6MTcwOTUzODc0M30.AB8Ic42ymLQMYG2xj561XDYl03tagD6R51bUgnU1YXg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3209f430-3817-4227-a138-a685caab511c",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "4eef0128-3724-49b6-88be-36892b5cbf61",
+            "name": "Update a Course",
+            "url": "/updateCourse/65e55755f9566c913c6c061b",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-04T05:19:45.887Z",
+            "modified": "2024-03-04T05:20:58.876Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTcxYWY5NTY2YzkxM2M2YzA2MTciLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjg4NjIsImV4cCI6MTcwOTUzOTY2Mn0.MlJxSFcflvTByAJ-FAxFDCYPpmRHtSE4s7t0bbvuHU8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Matemática"
+                    },
+                    {
+                        "name": "description",
+                        "value": "materia donde pierden alumnos"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65e5571af9566c913c6c0617"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad1f1cb6-7674-4621-8dab-519c8bf48639",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "8e0f7e67-230e-49c9-a9ef-5a287b1737ee",
+            "name": "Delete Course",
+            "url": "/deleteCourse/65e55755f9566c913c6c061b",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-04T05:24:31.929Z",
+            "modified": "2024-03-04T05:25:07.126Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTcxYWY5NTY2YzkxM2M2YzA2MTciLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjg4NjIsImV4cCI6MTcwOTUzOTY2Mn0.MlJxSFcflvTByAJ-FAxFDCYPpmRHtSE4s7t0bbvuHU8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bb13f2ba-ba2c-44b6-940b-5d3df40405ae",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "c8263b42-d653-4b8e-a165-c9af05c21098",
+            "name": "Search Course",
+            "url": "/search",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-04T05:25:29.125Z",
+            "modified": "2024-03-04T05:26:34.041Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTcxYWY5NTY2YzkxM2M2YzA2MTciLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjg4NjIsImV4cCI6MTcwOTUzOTY2Mn0.MlJxSFcflvTByAJ-FAxFDCYPpmRHtSE4s7t0bbvuHU8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Matemática"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "be103c0e-8672-4a43-82ae-29ee7a12a96a",
+            "colId": "dccc2360-7ae9-4498-9f0c-0168e1516f41",
+            "containerId": "c8263b42-d653-4b8e-a165-c9af05c21098",
+            "name": "Assign a Course",
+            "url": "/assignCourse",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-04T05:40:07.041Z",
+            "modified": "2024-03-04T05:50:00.983Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTcxYWY5NTY2YzkxM2M2YzA2MTciLCJ1c2VybmFtZSI6ImpvcmdlIiwibmFtZSI6ImpvcmdlIiwicm9sZSI6IlRFQUNIRVIiLCJpYXQiOjE3MDk1Mjg4NjIsImV4cCI6MTcwOTUzOTY2Mn0.MlJxSFcflvTByAJ-FAxFDCYPpmRHtSE4s7t0bbvuHU8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "course",
+                        "value": "65e55b395414f75567e05009"
+                    },
+                    {
+                        "name": "student",
+                        "value": "65e55fb74c247f0d4cefd505"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2689"
+        }
+    }
+}
